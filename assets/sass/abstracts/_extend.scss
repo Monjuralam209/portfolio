@@ -22,14 +22,11 @@
     margin: 0;
 }
 
-%of-hidden,
-%hidden
- {
+%of-hidden, %hidden {
     overflow: hidden;
 }
 
-%c-pointer,
-%pointer {
+%c-pointer, %pointer {
     cursor: pointer;
 }
 
@@ -121,8 +118,7 @@
     justify-content: space-evenly;
 }
 
-%ai-center,
-%align-items-center {
+%ai-center, %align-items-center {
     align-items: center;
 }
 

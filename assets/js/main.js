@@ -34,6 +34,7 @@
       $("#v-pills-tab .nav-link").click(function () {
         $(".hamburger").removeClass("remove");
       });
+
       $(".sub-link").click(function () {
         $(".hamburger").removeClass("remove");
       });
@@ -78,12 +79,12 @@
   $(function () {
     $("#example").pieChart({
       size: 100,
-      trackColor: "#eeeeee",
+      trackColor: "#32435b",
       barColor: "#ff6c2e",
       lineCap: "round",
       lineWidth: 8,
       animate: {
-        duration: 2000,
+        duration: 10000,
         enabled: true,
       },
       onStep: function (from, to, currentValue) {
@@ -92,12 +93,12 @@
     });
     $("#example2").pieChart({
       size: 100,
-      trackColor: "#eeeeee",
+      trackColor: "#32435b",
       barColor: "#ff6c2e",
       lineCap: "round",
       lineWidth: 8,
       animate: {
-        duration: 2000,
+        duration: 10000,
         enabled: true,
       },
       onStep: function (from, to, currentValue) {
@@ -106,12 +107,12 @@
     });
     $("#example3").pieChart({
       size: 100,
-      trackColor: "#eeeeee",
+      trackColor: "#32435b",
       barColor: "#ff6c2e",
       lineCap: "round",
       lineWidth: 8,
       animate: {
-        duration: 2000,
+        duration: 10000,
         enabled: true,
       },
       onStep: function (from, to, currentValue) {
@@ -120,12 +121,12 @@
     });
     $("#example4").pieChart({
       size: 100,
-      trackColor: "#eeeeee",
+      trackColor: "#32435b",
       barColor: "#ff6c2e",
       lineCap: "round",
       lineWidth: 8,
       animate: {
-        duration: 2000,
+        duration: 10000,
         enabled: true,
       },
       onStep: function (from, to, currentValue) {
@@ -134,12 +135,12 @@
     });
     $("#example5").pieChart({
       size: 100,
-      trackColor: "#eeeeee",
+      trackColor: "#32435b",
       barColor: "#ff6c2e",
       lineCap: "round",
       lineWidth: 8,
       animate: {
-        duration: 2000,
+        duration: 10000,
         enabled: true,
       },
       onStep: function (from, to, currentValue) {
@@ -148,12 +149,12 @@
     });
     $("#example6").pieChart({
       size: 100,
-      trackColor: "#eeeeee",
+      trackColor: "#32435b",
       barColor: "#ff6c2e",
       lineCap: "round",
       lineWidth: 8,
       animate: {
-        duration: 2000,
+        duration: 10000,
         enabled: true,
       },
       onStep: function (from, to, currentValue) {
@@ -162,12 +163,12 @@
     });
     $("#example7").pieChart({
       size: 100,
-      trackColor: "#eeeeee",
+      trackColor: "#32435b",
       barColor: "#ff6c2e",
       lineCap: "round",
       lineWidth: 8,
       animate: {
-        duration: 2000,
+        duration: 10000,
         enabled: true,
       },
       onStep: function (from, to, currentValue) {
@@ -176,12 +177,12 @@
     });
     $("#example8").pieChart({
       size: 100,
-      trackColor: "#eeeeee",
+      trackColor: "#32435b",
       barColor: "#ff6c2e",
       lineCap: "round",
       lineWidth: 8,
       animate: {
-        duration: 2000,
+        duration: 10000,
         enabled: true,
       },
       onStep: function (from, to, currentValue) {

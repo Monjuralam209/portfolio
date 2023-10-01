@@ -1,9 +1,10 @@
 .footer {
+    background-image: $duration-cart-color;
     @extend %text-center;
     padding: 65px 15px;
-    background-image: $duration-cart-color;
 
     &.single {
+
         @include breakpoint(xl) {
             margin-left: 370px;
             margin-right: 30px;

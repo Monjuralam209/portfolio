@@ -6,7 +6,7 @@
     }
 
     &__item {
-        background-color: $white-color;
+        background-color: $alter-theme-color;
         @extend %text-center;
         padding: 30px 30px 45px;
 
@@ -23,7 +23,7 @@
         line-height: 70px;
         margin: 0 auto;
         @include add-prefix(border-radius, 50%);
-        background-color: $social_bg-color;
+        background-color: #767c83;
         margin-bottom: 28px;
         @extend %p-rel;
         @include transition($transition);
@@ -40,7 +40,7 @@
             width: 60px;
             height: 60px;
             line-height: 60px;
-            background-color: $white-color;
+            background-color: $alter-theme-color;
             @extend %p-abs;
             top: 50%;
             left: 50%;
@@ -56,14 +56,14 @@
             h6 {
                 margin-bottom: 10px;
                 @include font-size($fs-h6);
-                color: $title-color;
+                color: $white-color;
             }
         }
 
         ul {
             li {
                 a {
-                    color: $pragraph-color;
+                    color: $white-color;
                     cursor: pointer;
                     @extend %text-initial;
 
@@ -71,7 +71,7 @@
                     &:hover,
                     &:focus,
                     &:active {
-                        color: $resume-color;
+                        color: $title_span-color;
                     }
                 }
             }
@@ -94,15 +94,11 @@
             width: 100%;
             height: 100%;
             border: 0;
-
-            @include breakpoint(sm) {
-                height: 470px;
-            }
         }
     }
 
     &__form {
-        background-color: $white-color;
+        background-color: $dark-blog-color;
         padding: 60px 20px 45px;
         margin-bottom: 30px;
 
@@ -123,17 +119,21 @@
             input,
             textarea {
                 background-color: $theme-color;
-                @extend %text-capitalize,
-                %text-regular,
-                %text-capitalize;
-                color: $dagination-color;
-                border: 1px solid $form-input-color;
+                @extend %text-regular;
+                color: $white-color;
+                border: 1px solid $theme-color;
                 @include add-prefix(border-radius, 0px);
                 padding: 15px 23px;
                 margin-bottom: 10px;
 
-                &:focus {
-                    border-color: $form-input-focus-color;
+                &:focus,
+                &:active {
+                    border-color: rgba($white-color, $alpha: .7);
+                }
+
+                &::placeholder {
+                    color: $white-color;
+                    @extend %text-capitalize;
                 }
             }
 
@@ -168,11 +168,11 @@
 
     &.success {
         @extend %mt-30;
-        color: rgba(green, $alpha: 1) !important;
+        color: rgba($white-color, $alpha: 1) !important;
     }
 
     &.error {
         @extend %mt-30;
-        color: rgba(red, $alpha: 1) !important;
+        color: rgba($title-span-color, $alpha: 1) !important;
     }
 }

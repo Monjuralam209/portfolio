@@ -49,8 +49,10 @@
         padding: 0px 24.25px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
         background-image: $button-hover-color;
+        color: $white-color;
     }
 
     img {

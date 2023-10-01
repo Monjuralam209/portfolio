@@ -4,8 +4,8 @@
     }
 
     &__title {
-        background-color: $white-color;
-        margin-bottom: 10px;
+        background-color: $alter-theme-color;
+        margin-bottom: 30px;
 
         &.normal {
             margin-bottom: 0;
@@ -36,13 +36,12 @@
     }
 
     &__title-content {
-        background-color: $white-color;
 
         h4 {
             @include font-size($fs-h4);
             @extend %text-bold,
             %text-capitalize;
-            color: $resume-heading-color;
+            color: $white-color;
             line-height: 2.5;
             margin-left: 24px;
 
@@ -59,18 +58,18 @@
 
         &::after {
             @extend %p-abs;
-            top: 71px;
+            top: 90px;
             left: 0;
-            height: calc(100% - 71px);
+            height: calc(100% - 90px);
             width: 10px;
-            background-color: $white-color;
+            background-color: $dark-resum-cart-color;
         }
     }
 
     &__item {
         margin-bottom: 30px;
         margin-left: 30px;
-        background-color: $white-color;
+        background-color: $dark-resum-cart-color;
         @extend %p-rel;
         @include add-prefix(transition, 3s linear infinite);
 
@@ -112,7 +111,7 @@
             width: 0px;
             height: 0px;
             border-top: 15px solid transparent;
-            border-right: 15px solid $white-color;
+            border-right: 15px solid $dark-resum-cart-color;
             border-bottom: 15px solid transparent;
             border-left: 15px solid transparent;
             @include add-prefix(transform, translateY(-50%));
@@ -126,7 +125,7 @@
             height: 18px;
             z-index: 1;
             background-color: $theme-color;
-            border: 3px solid $white-color;
+            border: 3px solid $dark-resum-cart-color;
             @include add-prefix(transform, translateY(-50%));
             @include add-prefix(border-radius, 50%);
         }
@@ -168,7 +167,7 @@
             @include font-size($fs-h5);
             @extend %text-bold,
             %text-capitalize;
-            color: $black-color;
+            color: $white-color;
             @extend %text-1;
 
             span {
@@ -178,7 +177,7 @@
     }
 
     &__progress-bar {
-        background-color: $white-color;
+        background-color: $dark-resum-cart-color;
         @extend %flex,
         %justify-center,
         %ai-center;
@@ -235,7 +234,7 @@
             }
 
             .pie-title-center {
-                background-color: $white-color;
+                background-color: transparent;
                 display: block;
                 position: relative;
                 text-align: center;

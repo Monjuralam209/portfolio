@@ -41,6 +41,7 @@
             margin-bottom: 15px;
             background-image: $message-color;
 
+
             &::after {
                 @extend %p-abs;
                 display: block;
@@ -58,7 +59,7 @@
             @include font-size($fs-h2);
             @extend %text-bold,
             %text-capitalize;
-            color: $title-color;
+            color: $white-color;
             margin-bottom: 16px;
 
             span {
@@ -67,7 +68,6 @@
         }
 
         &>p {
-            color: $pragraph-color;
             @extend %text-capitalize,
             %text-regular;
             line-height: 1.875;
@@ -89,7 +89,7 @@
                 @extend %p-rel,
                 %text-capitalize,
                 %text-medium;
-                color: $details-left-color;
+                color: $white-color;
 
                 @include breakpoint(sm) {
                     width: 130px;
@@ -108,12 +108,12 @@
 
             .right {
                 text-transform: initial;
-                font-size: $fs-h6;
+                @include font-size($fs-h6);
                 @extend %text-regular;
-                color: $title-color;
+                color: $white-color;
 
                 a {
-                    color: $title-color;
+                    color: $white-color;
 
                     &:hover,
                     &:focus,
@@ -133,6 +133,7 @@
     }
 }
 
+
 .pageheader {
     padding-block: 150px;
     background-position: center;
@@ -144,7 +145,6 @@
     }
 
     h2 {
-        color: $white-color;
         text-transform: capitalize;
         @include font-size(36px);
     }

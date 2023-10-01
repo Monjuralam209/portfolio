@@ -31,10 +31,6 @@
 
 
 
-    <div class="overlay"></div>
-
-
-
     <!-- =========================== mobile menu start =========================== -->
     <nav class="mobile-nav">
         <div class="container">
@@ -75,9 +71,8 @@
                         aria-orientation="vertical">
                         <!--======================= list-item-1 start  =======================-->
                         <li>
-                            <a href="#home-menu" class="nav-link 
-                            active" id="home-menu-tab" data-bs-toggle="pill" data-bs-target="#home-menu" role="tab"
-                                aria-controls="home-menu" aria-selected="true">
+                            <a href="#home-menu" class="nav-link active" id="home-menu-tab" data-bs-toggle="pill"
+                                data-bs-target="#home-menu" role="tab" aria-controls="home-menu" aria-selected="true">
                                 <div class="list-group-item sub-link">
                                     <ul class="sidebar__menu-item d-flex">
                                         <li class="sidebar__menu-icon home-color">
@@ -102,7 +97,9 @@
                                 <div class="list-group-item sub-link">
                                     <ul class="sidebar__menu-item d-flex">
                                         <li class="sidebar__menu-icon about-color">
-                                            <img src="assets/images/home/nav_icon/02.png" alt="About Me">
+                                            <span>
+                                                <img src="assets/images/home/nav_icon/02.png" alt="About Me">
+                                            </span>
                                         <li class="sidebar__menu-title">
                                             <h6>About Me</h6>
                                             <span>Who i am</span>
@@ -259,12 +256,14 @@
     <!--======================= main content start  =======================-->
     <main class="section">
         <div class="tab-content" id="v-pills-tabContent">
+
             <!--======================= home-menu section start  =======================-->
             <div class="tab-pane fade show active wow animate__zoomIn" data-wow-duration="1s" id="home-menu"
                 role="tabpanel" aria-labelledby="home-menu-tab">
-                <section class="home-menu">
+                <section class="home-menu" data-serialscrolling-target="home-menu">
                     <div class="home-menu__wrapper">
                         <div class="row align-items-center flex-lg-row-reverse">
+
                             <div class="col-lg-6">
                                 <div class="home-menu__thumb wow animate__zoomIn" data-wow-duration="1s"
                                     data-wow-delay="1.5s">
@@ -315,10 +314,10 @@
                                             <span class="right">Suite No: 07 New york city 1200</span>
                                         </li>
                                     </ul>
-                                    <button class="download-resum">
+                                    <a href="assets/files/cv.pdf" class="download-resum" download>
                                         Download Resume
                                         <img src="assets/images/home/download/download.svg" alt="Download icon">
-                                    </button>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -328,10 +327,11 @@
             <!--======================= home-menu section end  =======================-->
 
 
+
             <!--======================= about section start  =======================-->
             <div class="tab-pane fade  wow animate__lightSpeedInLeft" data-wow-duration="1s" id="about" role="tabpanel"
                 aria-labelledby="about-tab">
-                <section class="about">
+                <section class="about" data-serialscrolling-target="about-menu">
                     <div class="section__header">
                         <h3>what can i do</h3>
                     </div>
@@ -408,7 +408,7 @@
             <!--======================= resume section start  =======================-->
             <div class="tab-pane fade  wow animate__lightSpeedInRight" data-wow-duration="1s" id="resume"
                 role="tabpanel" aria-labelledby="resume-tab">
-                <section class="resume">
+                <section class="resume" data-serialscrolling-target="resume-menu">
                     <div class="section__header">
                         <h3>my <span>cv</span> resume</h3>
                     </div>
@@ -529,13 +529,13 @@
                                             <div id="example" class="color pie-title-center" data-percent="90">
                                                 <span class="pie-value">90%</span>
                                             </div>
-                                            <p>Adobe Photoshop</p>
+                                            <p>Photoshop</p>
                                         </div>
                                         <div class="prog progress-bar-02">
                                             <div id="example2" class="color pie-title-center" data-percent="80">
                                                 <span class="pie-value">80%</span>
                                             </div>
-                                            <p>Adobe illustrator</p>
+                                            <p>illustrator</p>
                                         </div>
                                         <div class="prog progress-bar-03">
                                             <div id="example3" class="color pie-title-center" data-percent="76">
@@ -699,7 +699,7 @@
             <!--======================= services section start  =======================-->
             <div class="tab-pane fade wow animate__fadeInDown" data-wow-duration="1s" id="services" role=" tabpanel"
                 aria-labelledby="services-tab">
-                <section class="services">
+                <section class="services" data-serialscrolling-target="services-menu">
                     <div class="section__header">
                         <h3>My Awesome Services</h3>
                     </div>
@@ -707,10 +707,10 @@
                         <div class="row g-4">
                             <div class="col-xxxl-4 col-md-6">
                                 <div class="cart__item">
-                                    <div class="cart__inner">
+                                    <div class="cart__inner dark">
                                         <div class="cart__thumb dauble-img">
-                                            <div class="cart__thumb-outer">
-                                                <div class="cart__thumb-inner">
+                                            <div class="cart__thumb-outer derk">
+                                                <div class="cart__thumb-inner derk">
                                                     <img src="assets/images/home/services/01.png" alt="Web_Design">
                                                 </div>
                                             </div>
@@ -730,10 +730,10 @@
                             </div>
                             <div class="col-xxxl-4 col-md-6">
                                 <div class="cart__item">
-                                    <div class="cart__inner">
+                                    <div class="cart__inner dark">
                                         <div class="cart__thumb dauble-img">
-                                            <div class="cart__thumb-outer">
-                                                <div class="cart__thumb-inner">
+                                            <div class="cart__thumb-outer derk">
+                                                <div class="cart__thumb-inner derk">
                                                     <img src="assets/images/home/services/02.png" alt="Web_Development">
                                                 </div>
                                             </div>
@@ -753,10 +753,10 @@
                             </div>
                             <div class="col-xxxl-4 col-md-6">
                                 <div class="cart__item">
-                                    <div class="cart__inner">
+                                    <div class="cart__inner dark">
                                         <div class="cart__thumb dauble-img">
-                                            <div class="cart__thumb-outer">
-                                                <div class="cart__thumb-inner">
+                                            <div class="cart__thumb-outer derk">
+                                                <div class="cart__thumb-inner derk">
                                                     <img src="assets/images/home/services/03.png" alt="Graphic_Design">
                                                 </div>
                                             </div>
@@ -776,10 +776,10 @@
                             </div>
                             <div class="col-xxxl-4 col-md-6">
                                 <div class="cart__item">
-                                    <div class="cart__inner">
+                                    <div class="cart__inner dark">
                                         <div class="cart__thumb dauble-img">
-                                            <div class="cart__thumb-outer">
-                                                <div class="cart__thumb-inner">
+                                            <div class="cart__thumb-outer derk">
+                                                <div class="cart__thumb-inner derk">
                                                     <img src="assets/images/home/services/04.png"
                                                         alt="Internet_Marketing">
                                                 </div>
@@ -800,10 +800,10 @@
                             </div>
                             <div class="col-xxxl-4 col-md-6">
                                 <div class="cart__item">
-                                    <div class="cart__inner">
+                                    <div class="cart__inner dark">
                                         <div class="cart__thumb dauble-img">
-                                            <div class="cart__thumb-outer">
-                                                <div class="cart__thumb-inner">
+                                            <div class="cart__thumb-outer derk">
+                                                <div class="cart__thumb-inner derk">
                                                     <img src="assets/images/home/services/05.png"
                                                         alt="Digital_Photography">
                                                 </div>
@@ -824,10 +824,10 @@
                             </div>
                             <div class="col-xxxl-4 col-md-6">
                                 <div class="cart__item">
-                                    <div class="cart__inner">
+                                    <div class="cart__inner dark">
                                         <div class="cart__thumb dauble-img">
-                                            <div class="cart__thumb-outer">
-                                                <div class="cart__thumb-inner">
+                                            <div class="cart__thumb-outer derk">
+                                                <div class="cart__thumb-inner derk">
                                                     <img src="assets/images/home/services/06.png"
                                                         alt="Amazone_Affiliate">
                                                 </div>
@@ -857,7 +857,7 @@
             <!--======================= portfolio section start  =======================-->
             <div class="tab-pane fade  wow animate__fadeInUp" data-wow-duration="1s" id="portfolio" role="tabpanel"
                 aria-labelledby="portfolio-tab">
-                <section class="portfolio">
+                <section class="portfolio" data-serialscrolling-target="portfolio-menu">
                     <div class="section__header">
                         <h3>My Recent Portfolio</h3>
                     </div>
@@ -868,26 +868,26 @@
                                     <i class="icofont-star"></i>
                                     all gallery
                                 </li>
-                                <li data-filter=".category-a">
+                                <li data-filter=".image_gallery">
                                     <i class="icofont-image icofont-flip-horizontal"></i>
                                     image gallery
                                 </li>
-                                <li data-filter=".category-b">
+                                <li data-filter=".video_gallery">
                                     <i class="icofont-play-alt-1"></i>
                                     video gallery
                                 </li>
-                                <li data-filter=".category-c">
+                                <li data-filter=".illustration">
                                     <i class="icofont-image icofont-flip-horizontal"></i>
                                     illustration
                                 </li>
-                                <li data-filter=".category-d">
+                                <li data-filter=".photography">
                                     <i class="icofont-image icofont-flip-horizontal"></i>
                                     photography
                                 </li>
                             </ul>
                         </div>
                         <div class="row g-3 portfolio-filter">
-                            <div class="col-lg-4 col-md-6 mix category-a">
+                            <div class="col-lg-4 col-md-6 mix image_gallery">
                                 <div class=" portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -898,7 +898,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mix category-a">
+                            <div class="col-lg-4 col-md-6 mix image_gallery">
                                 <div class="portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -909,7 +909,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mix category-b">
+                            <div class="col-lg-4 col-md-6 mix video_gallery">
                                 <div class="portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -920,7 +920,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mix category-b">
+                            <div class="col-lg-4 col-md-6 mix video_gallery">
                                 <div class="portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -931,7 +931,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mix category-c">
+                            <div class="col-lg-4 col-md-6 mix illustration">
                                 <div class="portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -942,7 +942,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mix category-c">
+                            <div class="col-lg-4 col-md-6 mix illustration">
                                 <div class="portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -953,7 +953,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mix category-d">
+                            <div class="col-lg-4 col-md-6 mix photography">
                                 <div class="portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -964,7 +964,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mix category-d">
+                            <div class="col-lg-4 col-md-6 mix photography">
                                 <div class="portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -975,7 +975,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6 mix category-d">
+                            <div class="col-lg-4 col-md-6 mix photography">
                                 <div class="portfolio__item">
                                     <div class="portfolio__inner">
                                         <div class="portfolio__thumb">
@@ -997,7 +997,7 @@
             <!--======================= blog section start  =======================-->
             <div class="tab-pane fade  wow animate__pulse" data-wow-duration="1s" id="blog" role="tabpanel"
                 aria-labelledby="blog-tab">
-                <section class="blog">
+                <section class="blog" data-serialscrolling-target="blog-menu">
                     <div class="section__header">
                         <h3>My Recent blogs</h3>
                     </div>
@@ -1094,7 +1094,7 @@
             <!--======================= contact section start  =======================-->
             <div class="tab-pane fade wow animate__slideInUp" data-wow-duration="1s" id="contact" role="tabpanel"
                 aria-labelledby="contact-tab">
-                <section class="contact">
+                <section class="contact" data-serialscrolling-target="contact-menu">
                     <div class="section__header">
                         <h3>My Contact Info</h3>
                     </div>
@@ -1228,7 +1228,7 @@
 
 
             <!--======================= footer section start  =======================-->
-            <footer class="footer">
+            <footer class="footer" data-serialscrolling-target="footer-menu">
                 <div class="footer__header">
                     <h2>william smith</h2>
                 </div>
@@ -1264,8 +1264,9 @@
                 </div>
             </footer>
             <!--======================== footer section end  ========================-->
-
         </div>
+
+
     </main>
     <!--======================= main content start  =======================-->
 

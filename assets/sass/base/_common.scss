@@ -324,10 +324,10 @@
 // mobile nav ber 
 .mobile-nav {
 	position: fixed;
-	background-color: $mobile-nav-color;
+	background-color: $theme-color;
 	width: 100%;
 	z-index: 10;
-	box-shadow: 0 0 3px 2px rgba($white-color, 0.5);
+	box-shadow: 0 0 3px 1px #ffffff1a;
 
 	@include breakpoint(xl) {
 		display: none !important;
@@ -362,14 +362,14 @@
 		flex-direction: column;
 
 		span {
-			@extend %p-abs;
 			transition-duration: 0.5s;
+			position: absolute;
 			height: 5px;
 			width: 35px;
 			top: 50%;
 			@include add-prefix(transform, translateY(-50%));
-			background-color: $white-color;
 			@include border-radius(4px);
+			background-color: $white-color;
 
 			&:before {
 				@extend %p-abs;
@@ -409,16 +409,15 @@
 	}
 }
 
+
 // main content section
-section {
-	overflow: hidden;
-}
 
 .section {
 	max-width: calc(100%);
 	margin-left: auto;
 	padding: 15px;
 	@include add-prefix(transition, .9s ease-in-out);
+	overflow: hidden;
 
 	@include breakpoint(sm) {
 		padding: 30px;
@@ -465,7 +464,7 @@ section {
 		&::before {
 			left: 100px;
 			width: calc(100% - 100px);
-			background-color: $white-color;
+			background-color: $alter-theme-color;
 		}
 
 		h3 {
@@ -473,7 +472,7 @@ section {
 			@extend %text-bold,
 			%text-capitalize,
 			%p-rel;
-			color: $title-color;
+			color: $white-color;
 			padding-bottom: 18px;
 
 			span {
@@ -483,8 +482,10 @@ section {
 	}
 }
 
-.services .cart__content {
-	text-align: left;
+.services {
+	.cart__content {
+		text-align: left;
+	}
 }
 
 // bootstrab column system 

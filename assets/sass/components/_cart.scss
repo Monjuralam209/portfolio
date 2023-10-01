@@ -1,8 +1,13 @@
 .cart {
     &__inner {
-        background-color: $white-color;
+        background-color: $dark-cart-calar;
         padding: 20px;
         @extend %text-center;
+
+
+        &.dark {
+            background-color: $dark-services-cart-color !important;
+        }
 
         @include breakpoint(sm) {
             display: flex;
@@ -93,6 +98,7 @@
         }
     }
 
+
     &__thumb-outer {
         height: 70px;
         width: 70px;
@@ -105,6 +111,9 @@
         %ai-center;
         @include transition($transition);
 
+        &.derk {
+            background-color: #32435b;
+        }
 
         @include breakpoint(sm) {
             margin-bottom: 22px;
@@ -132,9 +141,12 @@
         width: 60px;
         line-height: 60px;
         @extend%text-center;
-        //border: 1px solid $ellipse-border-color;
         background-color: $white-color;
         @include add-prefix(border-radius, 50%);
+
+        &.derk {
+            background-color: $alter-theme-color;
+        }
     }
 
     &__thumb-count {
@@ -146,9 +158,8 @@
         span {
             font-size: 56px;
             font-weight: 700;
-            color: $social_bg-color;
+            color: #32435b;
             @include transition($transition);
-            text-shadow: -1px -1px 0 $white-color, 1px -1px 0 $white-color, -1px 1px 0 $white-color, 1px 1px 0 $white-color;
         }
     }
 
@@ -184,7 +195,7 @@
         h6 {
             @extend %text-bold,
             %text-capitalize;
-            color: $title-color;
+            color: $white-color;
 
             span {
                 @extend %text-uppercase;

@@ -6,6 +6,8 @@
     }
 
     &__item {
+        background-color: $dark-blog-color;
+
         &:hover {
             .blog__thumb {
                 img {
@@ -25,7 +27,6 @@
     }
 
     &__content {
-        background-color: $white-color;
         padding: 20px 25px;
 
         @include breakpoint(sm) {
@@ -38,11 +39,11 @@
             %text-1;
             @include font-size($fs-h4);
             color: $title-color;
-            margin-bottom: 25px;
+            margin-bottom: 15px;
 
             a {
                 @extend %text-1;
-                color: $title-color;
+                color: $white-color;
 
                 &:hover {
                     @extend %text-1;
@@ -75,7 +76,7 @@
                 margin-right: 15px;
 
                 a {
-                    color: $pragraph-color;
+                    color: $white-color;
 
                     &:hover {
                         color: $title-span-color;
@@ -110,15 +111,13 @@
                 @include font-size($fs-base);
             }
         }
-
     }
 
     &__tags-area {
         @extend %flex;
         justify-content: space-between;
-        border-top: 1px solid rgba($black-color, $alpha: .1);
+        border-top: 1px solid rgba($white-color, $alpha: .1);
         padding: 25px 10px;
-        background-color: $white-color;
 
         @include breakpoint(sm) {
             padding: 25px;
@@ -132,8 +131,8 @@
 
                 a {
                     @extend %text-capitalize;
-                    border: 1px solid rgba($black-color, $alpha: .1);
-                    color: $black-color;
+                    border: 1px solid rgba($white-color, $alpha: .1);
+                    color: $white-color;
                     line-height: 40px;
                     padding: 0 15px;
                     @include border-radius(3px);
@@ -244,7 +243,7 @@
             margin-left: 12px;
 
             a {
-                color: $pragraph-color;
+                color: $white-color;
 
                 p {
                     @extend %text-medium;
@@ -259,8 +258,6 @@
         }
     }
 
-
-
     &__publish {
         margin-bottom: 15px;
 
@@ -268,7 +265,7 @@
             @extend%text-medium;
 
             a {
-                color: $pragraph-color;
+                color: $white-color;
                 @extend%text-regular;
 
                 &:hover {
@@ -276,7 +273,6 @@
                 }
             }
         }
-
 
         @include breakpoint(sm) {
             margin-bottom: 0;
@@ -297,6 +293,7 @@
 }
 
 
+
 // authors
 .author {
     @extend %flex;
@@ -305,7 +302,7 @@
     align-items: center;
     padding: 25px;
     margin: 30px 0;
-    background-color: $white-color;
+    background-color: $dark-blog-color;
 
     @include breakpoint(max-sm) {
         justify-content: center;
@@ -314,7 +311,7 @@
     &__thumb {
         width: 160px;
         text-align: center;
-        border: 5px solid rgba($black-color, $alpha: .1);
+        border: 5px solid rgba($white-color, $alpha: .1);
         @include border-radius(100%);
         @extend %hidden;
 
@@ -344,7 +341,7 @@
 
         h5 {
             a {
-                color: $pragraph-color;
+                color: $white-color;
                 @extend%text-bold;
                 @include font-size($fs-h4);
 
@@ -369,7 +366,7 @@
                 width: 30px;
                 height: 30px;
                 line-height: 30px;
-                color: $pragraph-color;
+                color: $white-color;
                 background: transparent;
 
                 &:hover {
@@ -383,12 +380,12 @@
 // comments
 .comments {
     @extend %mt-30;
-    background-color: $white-color;
+    background-color: $dark-blog-color;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.06));
 
     .comment-title {
         @extend %p-30;
-        border-bottom: 1px solid rgba($black-color, $alpha: .1);
+        border-bottom: 1px solid rgba($white-color, $alpha: .1);
         @include font-size(20px);
     }
 
@@ -400,7 +397,7 @@
         .com-item {
             @extend %p-30;
             @extend %pb-0;
-            border-top: 1px solid rgba($black-color, $alpha: .1);
+            border-top: 1px solid rgba($white-color, $alpha: .1);
 
             &:first-child {
                 border-top: none;
@@ -450,7 +447,6 @@
                             @extend %text-bold;
                             @extend %mr-5;
                             @include font-size(18px);
-                            color: $pragraph-color;
 
                             &:hover {
                                 color: $title_span-color;
@@ -495,7 +491,7 @@
 
             .comment-list {
                 padding: 0 20px;
-                border-top: 1px solid rgba($black-color, $alpha: .1);
+                border-top: 1px solid rgba($white-color, $alpha: .1);
 
                 @include breakpoint(sm) {
                     padding-left: 60px;
@@ -522,10 +518,10 @@
 .comment-respond {
     @extend %mt-30;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.06));
-    background-color: $white-color;
+    background-color: $dark-blog-color;
 
     h4 {
-        border-bottom: 1px solid rgba($black-color, $alpha: .10);
+        border-bottom: 1px solid rgba($white-color, $alpha: .10);
         @extend %p-30;
         @include font-size(20px);
     }
@@ -549,20 +545,14 @@
 
             input,
             textarea {
-                background-color: $theme-color;
                 border: none;
                 outline: none;
                 margin-bottom: 20px;
-                border: 1px solid $form-input-color;
-                color: $dagination-color;
+                border: 1px solid rgba($white-color, $alpha: .1);
+                color: $white-color;
 
                 &::placeholder {
-                    color: rgba($dagination-color, $alpha: .9);
-                }
-
-                &:focus,
-                &:active {
-                    border-color: $form-input-focus-color;
+                    color: rgba($white-color, $alpha: .9);
                 }
             }
 

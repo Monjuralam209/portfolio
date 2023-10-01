@@ -9,7 +9,7 @@
         max-width: 340px;
         position: fixed;
         height: 100%;
-        background-color: $white-color;
+        background-color: $alter-theme-color;
         padding: 35px;
         overflow-y: scroll;
         @include add-prefix(transform, translateX(-340px));
@@ -32,7 +32,7 @@
         }
 
         &::-webkit-scrollbar-track {
-            background: initial;
+            background: #18222e;
             /* color of the tracking area */
         }
 
@@ -41,7 +41,7 @@
             /* color of the scroll thumb */
             @include add-prefix(border-radius, 10px);
             /* roundness of the scroll thumb */
-            border: 3px solid initial;
+            border: 3px solid #18222e;
             /* creates padding around scroll thumb */
         }
 
@@ -51,9 +51,11 @@
         // scrollbar-color: red orange;
         /* scroll thumb and track */
 
+
     }
 
     &__logo {
+
         a {
             @extend %p-rel;
             z-index: 1;
@@ -89,21 +91,20 @@
             %text-capitalize;
 
             a {
-                color: $menu-title-color;
+                color: $white-color;
 
                 &:focus,
                 &:active,
                 &:hover {
                     color: $menu-title-color;
                     background-image: $duration-cart-color;
-                    -webkit-background-clip: text;
-                    -webkit-text-fill-color: transparent;
+                    @include gradient-text;
                 }
             }
         }
 
         span {
-            color: $dagination-color;
+            color: $white-color;
             @extend %text-regular;
             text-transform: initial;
         }
@@ -115,11 +116,20 @@
         .list-group-item {
             padding: 5px 15px;
             margin-top: 10px !important;
-            border: 1px solid $border-color-1;
+            border: 1px solid rgba($white-color, $alpha: .1);
             @extend %border-radius-4;
+            // background-color: $theme-color;
+            // background: rgba($theme-color, $alpha: .3);
+            background: transparent;
 
             &:first-child {
                 margin-top: 0;
+            }
+
+            &::before,
+            &::after {
+                opacity: 0;
+                visibility: hidden;
             }
         }
 
@@ -166,18 +176,17 @@
 
         &-title {
             padding-left: 12px;
-            text-align: left;
 
             h6 {
                 @extend %text-bold,
                 %text-capitalize;
                 font-size: $fs-h6;
-                color: $menu-title-color;
+                color: $white-color;
             }
 
             span {
                 text-transform: initial;
-                color: $pragraph-color;
+                color: $white-color;
             }
         }
 
@@ -215,7 +224,6 @@
                 background-color: $facebook;
             }
 
-            li {}
         }
     }
 
@@ -234,11 +242,7 @@
     }
 
     #nav-serialscrolling .sub-link {
-        padding: 5px 15px;
-    }
-
-    .sub-link {
-        background-color: transparent;
+        padding: 5 15px;
     }
 
     #nav-serialscrolling .sub-link:hover,
@@ -246,31 +250,13 @@
     .nav-pills .nav-link.active,
     #nav-serialscrolling .sub-link.is-current {
         background: $message-color;
-        // border-color: $title_span-color;
-
-        .sidebar__menu-title {
-
-            h6,
-            span {
-                color: $white-color
-            }
-        }
-    }
-
-    .sub-link.is-current .sidebar__menu-title span,
-    .nav-link.active .sidebar__menu-title span,
-    .sub-link.is-current .sidebar__menu-title h6,
-    .nav-link.active .sidebar__menu-title h6,
-        {
-        color: $white-color !important;
     }
 
     #nav-serialscrolling .sub-link:before,
     .nav-pills .nav-link:after,
     .nav-pills .nav-link:before,
     #nav-serialscrolling .sub-link:after {
-        content: "";
-        position: absolute;
+        @extend %p-abs;
         top: 50%;
         transform: translateY(-50%);
         border-radius: 100%;
@@ -283,6 +269,7 @@
         width: 16px;
         height: 16px;
         border: 1px solid rgba(255, 255, 255, 0.2);
+        display: none;
     }
 
     #nav-serialscrolling .sub-link:after,
@@ -292,5 +279,6 @@
         height: 5px;
         background-color: #b41c28;
         opacity: 0 !important;
+
     }
 }
